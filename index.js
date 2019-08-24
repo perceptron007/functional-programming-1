@@ -12,6 +12,8 @@ const addColor = color => {
   element.appendChild(div);
 }
 
+// What if the addColor was supposed to return a value, forEach will ignore it ?
+// What can we do to solve this problem ?
 const colors = ['red', 'aqua', 'green', 'yellow', 'blue'];
 
 colors.forEach(addColor);
