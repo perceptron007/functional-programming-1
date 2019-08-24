@@ -12,8 +12,6 @@ const addColor = color => {
   element.appendChild(div);
 }
 
-addColor('red');
-addColor('orange');
-addColor('yellow');
-addColor('green');
-addColor('aqua');
+const colors = ['red', 'aqua', 'green', 'yellow', 'blue'];
+
+colors.forEach(addColor);
