@@ -1,0 +1,8 @@
+{
+  "name": "js-p5zgpc",
+  "version": "0.0.0",
+  "private": true,
+  "dependencies": {
+    "ramda": "^0.26.1"
+  }
+}
