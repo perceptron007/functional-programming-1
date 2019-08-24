@@ -16,10 +16,9 @@ const ids = ['rainbow', 'cycle'];
 // What can we do to solve this problem ?
 // Change the function above so that it accepts an array of different ids and apply the same logic all over them
 const getElementsById = id => document.getElementById(id);
-const elements = ids.map(getElementsById);
-
 const appendChild = (colorElement) => (parentElement) => parentElement.appendChild(colorElement);
-const colorElements = colors.map(getColorElement);
-const colors= colorElements.map(appendChild);
 
-elements.forEach(item => colors.forEach(f => f(item)));
+const colorsFunction= colors.map(getColorElement).map(appendChild);
+
+ids.map(getElementsById)
+   .map(item => colorsFunction.forEach(f => {f(item); console.log(item)}));
