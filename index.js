@@ -9,6 +9,7 @@ const addColor = color => {
   const div = document.createElement('div');
   div.style.paddingTop = '10px';
   div.style.backgroundColor = color;
+  div.style.paddingBottom = '10px';
   element.appendChild(div);
 }
 
